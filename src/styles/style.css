@@ -4,6 +4,11 @@ body {
   color: white;
   background-color: black;
 }
+
+aside {
+  display: flex;
+}
+
 .aside-class {
   border-radius: 5%;
   padding-bottom: 5px;
@@ -16,21 +21,26 @@ body {
 
 aside {
   display: flex;
-  border-right: 1px solid white;
+  border-right: 2px solid white;
   justify-content: center;
   height: 100%;
 }
 
 .icon {
   font-size: 40px;
+  margin-top: 5px;
 }
 
 .bokovou {
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
   padding: 0px 10px 0px 2px;
 }
 
 .sigma-main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100%;
   width: 100%;
@@ -54,9 +64,11 @@ aside {
 .song-name {
   margin: 0px;
   margin-bottom: 5px;
+  font-size: 15px;
 }
 .song-autor {
   margin: 0px;
+  opacity: 67%;
 }
 
 .songs-icon {
@@ -66,6 +78,101 @@ aside {
 }
 
 .song-all {
+  margin: 7px;
+  display: flex;
+  /* width: 100%; */
   padding: 7px;
-  border: 1px solid white;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: all 0.5s;
+  opacity: 100%;
+  background-color: black;
 }
+
+.song-all:hover {
+  background-color: rgb(24, 24, 24);
+  border: 2px solid white;
+}
+
+.song-time {
+  display: flex;
+  align-items: end;
+  opacity: 67%;
+}
+
+.song-time-all {
+  display: flex;
+  padding-left: 840px;
+  align-items: center;
+}
+
+.audio-all {
+  padding: 10px;
+  border-top: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.audio-photo {
+  width: 64px;
+  height: 64px;
+}
+.audio-info {
+  display: flex;
+  flex-direction: column;
+}
+.audio-autor {
+  font-size: 20px; 
+  opacity: 67%;
+}
+.audio-name {
+  font-size: 20px;
+}
+.samaudio {
+}
+.audio-zvuk {
+}
+.audio-fixed {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+}
+
+.audio-icon {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt */
+
+.samaudio {
+  background-color: #f9f9f9; /*  Светло-серый фон */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 5px;
+  width: 300px; /* Задайте ширину */
+  margin: 10px 0; /* Отступы сверху и снизу */
+}
+
+.samaudio:focus {
+  outline: none; /* Удаляет стандартную обводку при фокусе (для accessibility нужно будет заменить на что-то видимое) */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Добавляет тень при фокусе */
+}
+
+/* Попытка стилизовать ползунок громкости (может не работать) */
+.samaudio::-webkit-media-controls-volume-slider {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+/* Попытка стилизовать кнопку воспроизведения (может не работать) */
+.samaudio::-webkit-media-controls-play-button {
+  background-color: #4CAF50; /* Зеленый цвет */
+  border-radius: 50%;
+  color: white;
+}
+
+/* code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt  code gpt */
